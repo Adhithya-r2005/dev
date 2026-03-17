@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "hi bro wtsup"
-echi "how are u"
+echo "how are u"
