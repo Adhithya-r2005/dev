@@ -16,7 +16,7 @@ pipeline{
   }
   stage('Run Python File'){
     steps{
-      sh 'python3 app.py'
+      sh 'python3 add.py'
     }
   }
   }
