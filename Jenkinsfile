@@ -14,6 +14,12 @@ pipeline{
      sh './script.sh'
     }
   }
+  stage('Run Script'){
+    steps {
+      sh 'chmod +x add.py'
+      sh './add.py'
+    }
+  }
   }
 }
 
