@@ -1,6 +1,6 @@
 #!/bin/bash
-a=2
-b=3
-c=$((a + b)) 
+a = 2
+b = 3
+c = a + b
 
-echo "sum of a and b: $c"
+print(f"sum of a and b: {c}")
