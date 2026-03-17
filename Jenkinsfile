@@ -17,3 +17,27 @@ pipeline{
   }
 }
 
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clone') {
+            steps {
+                git url: "https://github.com/Adhithya-r2005/dev.git",
+                    branch: "main"
+            }
+        }
+        
+        stage('Run Script') {
+            steps {
+                sh 'sh script.sh'
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo 'Build process completed.'
+        }
+    }
+}
